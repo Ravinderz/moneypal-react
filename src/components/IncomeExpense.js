@@ -5,8 +5,6 @@ export const IncomeExpense = () => {
 
   const { transactions } = useContext(GlobalContext);
 
-  const amounts = transactions.map(transaction => transaction.amount);
-
   let credit = 0;
   let debit = 0;
 
