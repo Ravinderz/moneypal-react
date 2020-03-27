@@ -1,5 +1,5 @@
-body{
-  background-color:#ecf0f1;
+body {
+  background-color: #ecf0f1;
 }
 
 .App {
@@ -19,7 +19,7 @@ h4 {
 .incomeExpense {
   display: flex;
   margin-top: 20px;
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
 }
 
 .income {
@@ -34,8 +34,8 @@ h4 {
   color: white;
 }
 
-.transactionList{
-  margin-bottom:30px;
+.transactionList {
+  margin-bottom: 30px;
 }
 
 ul {
@@ -43,21 +43,40 @@ ul {
   padding-inline-start: 0;
 }
 
-li{
-  background-color:#fff;
-  padding-left:5px;
-  padding-right:5px;
-  margin-bottom:10px;
+li {
+  background-color: #fff;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 10px;
 }
 
-li span{
-  float:right;
+li span {
+  float: right;
 }
 
-.credit{
-  border-right:4px solid #27ae60;
+.credit {
+  border-right: 4px solid #27ae60;
 }
 
-.debit{
-  border-right:4px solid #e74c3c;
+.debit {
+  border-right: 4px solid #e74c3c;
+}
+
+.position-li-out{
+  top:3%;
+  left:-35px;
+}
+
+.btn{
+  border-radius: 0;
+}
+
+.transactionList li .btn {
+  display: none;
+  
+  
+}
+
+.transactionList li:hover .btn, .btn:hover {
+  display: inline-block;
 }
