@@ -21,6 +21,8 @@ export const AddTransaction = () => {
       }
       console.log(newTransaction);
       addTransaction(newTransaction);
+      setText('');
+      setAmount(0);
   }
 
   return (
@@ -29,7 +31,7 @@ export const AddTransaction = () => {
       <hr />
       <form onSubmit={onSubmit}>
         <div className="form-group">
-          <label htmlFor="type">Choose credit/debit</label>
+          <label htmlFor="type">Choose type of transaction</label>
           <select
             id="type"
             className="form-control"
